@@ -2,9 +2,19 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-size:150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    background: rgb(223, 209, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
 h1{
-    color:rgb(109, 228, 109);
-    font:20px;
+    color:rgb(206, 39, 103);
 }
