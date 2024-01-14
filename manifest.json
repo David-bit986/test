@@ -1,0 +1,22 @@
+{
+    "name": "Project",
+    "description": "My project",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#0f4a73",
+    "icons": [
+        {
+            "src": "Poze/image-PJwI1yh7P-transformed.webp",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "Poze/image-PJwI1yh7P-transformed.webp",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

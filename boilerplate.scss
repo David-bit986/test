@@ -1,0 +1,400 @@
+::selection {
+    background: #CACBCB;
+}
+
+@function px-to-rem($px-value) {
+    @return ($px-value / 16) * 1rem;
+}
+
+
+
+@keyframes Rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    cursor: none;
+    caret-color: transparent;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1650px) {
+    .informations {
+        justify-content: center;
+
+        .infoPhoto {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .blackBox {
+                width: 100%;
+            }
+
+            .photo {
+                width: fit-content;
+                margin: 0;
+            }
+        }
+
+        .infoText {
+            .text {
+                margin: 6rem 1rem;
+
+            }
+        }
+    }
+
+    .gallery {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+
+
+            .containerText,
+            .bm,
+            .border {
+                margin: 2rem 0;
+                text-align: center;
+            }
+
+
+        }
+
+
+    }
+
+    .informations {
+        .infoText {
+            .text {
+                text-align: center;
+            }
+        }
+
+    }
+
+
+
+    .song {
+        justify-content: center;
+
+        .infoCont {
+            .info {
+                p {
+                    text-align: center;
+                }
+            }
+
+            margin-bottom: 2em;
+        }
+    }
+
+    footer {
+        .container {
+            justify-content: center;
+            margin: 2em;
+
+
+            .text {
+                text-align: center;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .photo {
+                margin: 5em 0;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        .main {
+            h1 {
+                font-size: px-to-rem(60);
+            }
+
+            overflow-x:hidden;
+        }
+
+
+
+        .informations {
+            justify-content: center;
+            flex-direction: column;
+
+
+            .infoPhoto {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .blackBox {
+                    width: 100%;
+                }
+
+                .photo {
+                    margin: 0px;
+                }
+            }
+
+
+            .infoText {
+                .text {
+                    text-align: center;
+
+                    h1 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+
+
+        .mainContent {
+            h1 {
+                font-size: px-to-rem(150);
+            }
+        }
+
+    }
+
+    .gallery {
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        .main {
+            padding: 0;
+            justify-content: center;
+
+        }
+
+        .albumGrid {
+            z-index: 2;
+            margin: px-to-rem(100);
+            display: grid;
+            position: relative;
+            transform: translateY(0) scale(1);
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            gap: 20px;
+
+            :nth-child(2) {
+                margin: 0;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        .main {
+            padding-top: 5vh;
+
+            .mainContent {
+                h1 {
+                    font-size: px-to-rem(50);
+                }
+            }
+        }
+
+        .title {
+            h1 {
+                font-size: px-to-rem(80);
+            }
+
+        }
+
+
+
+
+        .informations {
+
+            .infoText {
+                margin-top: 8vh;
+            }
+
+            .infoPhoto {
+                .photo {
+                    display: contents;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery {
+        .container {
+            .containerText {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* This changes all the animations globally */
+.animate__animated.animate__fadeInDown.t1 {
+    --animate-duration: 1s;
+    --animate-delay: 0.9s;
+}
+
+.animate__animated.animate__fadeInDown.t2 {
+    --animate-duration: 1s;
+    --animate-delay: 1.9s;
+}
+
+.animate__animated.animate__fadeInDown.t3 {
+    --animate-duration: 1s;
+    --animate-delay: 2.9s;
+}
+
+.animate__animated.animate__fadeInDown.t4 {
+    --animate-duration: 1s;
+    --animate-delay: 3.9s;
+}
+
+
+
+
+
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+body::-webkit-scrollbar-track:hover {
+    background-color: #f4f4f4
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a5;
+    border: 4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display: none
+}
+
+.hidden {
+    display: none;
+}
+
+.cursorS {
+    position: absolute;
+    animation: Rotate 10s infinite linear;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    img {
+        width: 75px;
+        height: 75px;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.spin-animation {
+    animation: spin 2s linear infinite;
+    /* Adjust the duration and timing function as needed */
+}
+
+
+
+.cursor-dot,
+.cursor-dot-outline {
+    z-index: 6;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    $size: 20px;
+    width: $size;
+    height: $size;
+    background-color: #E95A29;
+}
+
+.cursor-dot-outline {
+    $size: 40px;
+    width: $size;
+    height: $size;
+    background-color: rgba(#E95A29, 0.2);
+}

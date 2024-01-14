@@ -1,0 +1,218 @@
+@keyframes Rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.content {
+  position: relative;
+  overflow: hidden;
+  min-height: 200vh;
+}
+.content .main {
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 15vh;
+  position: relative;
+}
+.content .main .mainContent {
+  max-width: 1500px;
+  text-align: center;
+  margin: 0 3.125rem 3.75rem 3.125rem;
+}
+.content .main .mainContent h1 {
+  font-size: 4.375rem;
+  color: #161615;
+}
+.content .main .mainContent h1 span {
+  color: #E95A29;
+}
+.content div img {
+  width: 250px;
+  height: 250px;
+}
+.content .title {
+  margin-top: 10vh;
+  transition: transform 0.5s linear;
+  background-color: #ffffff;
+  width: 120vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateX(-100vw);
+}
+.content .title h1 {
+  color: #CACBCB;
+  font-size: 15.625rem;
+}
+.content .albumGrid {
+  z-index: 2;
+  margin: 6.25rem;
+  display: grid;
+  position: relative;
+  transform: translateY(-25vh) scale(3);
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 5rem;
+}
+.content .albumGrid :nth-child(2) {
+  margin: 0 50vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+.content .albumGrid :nth-child(2) .disk {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  top: 0;
+  z-index: -1;
+  margin: 0;
+}
+.content .albumGrid :nth-child(2) .disk img {
+  animation: Rotate 10s infinite linear;
+  width: 140px;
+  height: 140px;
+}
+.content .albumGrid div {
+  align-items: center;
+}
+
+.informations {
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(235, 235, 235, 0.1411764706);
+  flex-wrap: wrap;
+}
+.informations .infoPhoto {
+  position: relative;
+}
+.informations .infoPhoto .blackBox {
+  background-color: #161615;
+  width: 650px;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%) translateX(0);
+}
+.informations .infoPhoto .photo {
+  margin-left: 3vw;
+}
+.informations .infoPhoto .photo img {
+  width: 100%;
+}
+.informations .infoText {
+  max-width: 800px;
+  margin: 0 3vw;
+}
+.informations .infoText .text {
+  margin: 5rem;
+}
+.informations .infoText .text h1 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.informations .infoText :nth-child(4) {
+  margin-bottom: 0px;
+}
+
+.gallery {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery .container {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 5rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.gallery .container .containerText {
+  font-size: 3rem;
+}
+.gallery .container .bm {
+  margin-top: 5rem;
+}
+.gallery .container .border {
+  max-width: 90%;
+}
+.gallery .container .border img {
+  border: #CACBCB 15px solid;
+  width: 100%;
+}
+
+.song {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 0 5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.song .infoCont {
+  max-width: 450px;
+}
+.song .infoCont .title {
+  font-size: 3rem;
+  margin-bottom: 2em;
+}
+.song .infoCont .info p {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.song .verses p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+footer {
+  background-color: hsla(180, 1%, 79%, 0.05);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+footer .container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  flex-wrap: wrap;
+}
+footer .container .text {
+  max-width: 800px;
+}
+footer .container .text h1 {
+  margin-bottom: 1.5em;
+  font-size: 2rem;
+  font-weight: 700;
+}
+footer .container .photo {
+  max-width: 500px;
+}
+footer .container .photo img {
+  width: 100%;
+}
+footer .blackBottom {
+  width: 100%;
+  height: 15vh;
+  background-color: #161615;
+}/*# sourceMappingURL=style.css.map */
