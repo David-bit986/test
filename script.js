@@ -1,15 +1,3 @@
-define(['https://unpkg.com/rough-notation?module'], function (annotate) {
-    const a1 = annotate(document.querySelector('#e1'), { type: 'underline' });
-    const a2 = annotate(document.querySelector('#e3'), { type: 'box' });
-    const a3 = annotate(document.querySelector('#e2'), { type: 'circle' });
-
-    const ag = annotationGroup([a3, a1, a2]);
-    ag.show();
-});
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
     // Get the scroll-element
