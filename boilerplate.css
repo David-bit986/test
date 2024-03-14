@@ -116,16 +116,51 @@
   .gallery .container {
     width: 100%;
   }
+  .song {
+    padding: 0 1rem;
+  }
+  .song .infoCont .title {
+    text-align: center;
+  }
+  .artwork .infoText {
+    flex-direction: column;
+    align-items: center;
+  }
+  .artwork .infoText .infoCont {
+    text-align: center;
+    margin: 0 0 1em 0;
+  }
+  .MFandOF {
+    flex-direction: column-reverse;
+  }
+  .MFandOF .videoInfo {
+    text-align: center;
+    margin-top: 5em;
+    width: 100%;
+  }
+  .MFandOF .info {
+    text-align: center;
+    margin: 1em 0 5em 0;
+  }
+  .MFandOF .info p {
+    padding: 0.5em;
+  }
 }
 @media only screen and (max-width: 800px) {
+  .proiectInfo {
+    font-size: 1.3rem;
+  }
   .content .main {
     padding: 0;
     justify-content: center;
   }
+  .content .title {
+    margin-left: 4rem;
+  }
   .content .albumGrid {
     z-index: 2;
     margin: 6.25rem;
-    display: grid;
+    display: none;
     position: relative;
     transform: translateY(0) scale(1);
     grid-template-columns: auto auto auto;
@@ -135,6 +170,14 @@
   .content .albumGrid :nth-child(2) {
     margin: 0;
   }
+  .content .albumGrid2 {
+    margin-top: 25vh;
+    display: flex;
+    height: 50vh;
+  }
+  .gallery .photoTile h1 {
+    font-size: 5rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .content .main {
@@ -142,6 +185,9 @@
   }
   .content .main .mainContent h1 {
     font-size: 3.125rem;
+  }
+  .content .title {
+    margin-left: 6rem;
   }
   .content .title h1 {
     font-size: 5rem;
@@ -158,6 +204,10 @@
   }
   .gallery .container .containerText {
     font-size: 2.5rem;
+  }
+  .interview .iframe-container {
+    width: 100%;
+    height: 300px;
   }
 }
 /* This changes all the animations globally */
